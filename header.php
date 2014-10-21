@@ -10,10 +10,8 @@
 
 <header>
 	<div class="container-fluid">
-		<a href="" class="navigation-toggle">
-			<i class="fa fa-bars fa-2x"></i>
-			<span class="sr-only">Menu</span>
-		</a>
+		<!-- <a href="" class="navigation-toggle"><i class="fa fa-bars fa-2x"></i><span class="sr-only">Menu</span></a> -->
+		<h1 class="logo" ><a href="<?php bloginfo('url'); ?>" id="Logo"><?php bloginfo('name'); ?></a></h1>
 		<nav>
 			<?php 
 				$defaults = array(
@@ -25,7 +23,5 @@
 				wp_nav_menu(	$defaults	);
 			 ?>			
 		</nav>
-		<h1 class="logo" ><a href="<?php bloginfo('url'); ?>" id="Logo"><?php bloginfo('name'); ?></a></h1>
-
 	</div>
 </header>

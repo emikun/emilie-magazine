@@ -38,6 +38,7 @@
 			</div>
 		</div>
 		<small>&copy; <?php echo date('Y'); echo ' '; echo bloginfo('name'); ?></small>
+		<small class="disclaimer">Hi, this is a school project by <a href="emilie.io" target="_blank">Emilie Thaler</a>. I've tried my best to attribute all content to the respective owner and original source, but if there is something here of yours and you'd rather it not be there, please let me know by emailing me at <a href="mailto:emiliethaler@gmail.com">emiliethaler@gmail.com</a> and I will promptly remove it!</small>
 	</div>
 </footer>
 

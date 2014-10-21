@@ -3,7 +3,6 @@
 add_theme_support(	'menus'	);
 
 function register_theme_menus() {
-
 	register_nav_menus(
 		array(
 			'primary-menu' => __('Primary Menu'),
@@ -27,10 +26,9 @@ function wpm_theme_styles() {
 add_action( 'wp_enqueue_scripts', 'wpm_theme_styles' );
 
 function wpm_theme_js() {
-
 	wp_enqueue_script(	'modernizr_js', get_template_directory_uri() . '/js/modernizr.min.js', '','', false);
 	wp_enqueue_script(	'wow_js', get_template_directory_uri() . '/js/wow.min.js', array('jquery'),'', true);
-
+	wp_enqueue_script(	'bootstrap_js', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js', array('jquery'), '', true);
 }
 
 add_action( 'wp_enqueue_scripts', 'wpm_theme_js' );

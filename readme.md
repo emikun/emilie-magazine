@@ -1,18 +1,48 @@
-# To-Do List
+# Emilie's WordPress Magazine Project
 
-## Strategy & Planning
+This WordPress theme has been designed and developed for [Erik Fadiman](http://www.erikfadiman.com)'s Interaction IV class at the [Seattle Central Creative Academy](http://www.seattlecentralcreativeacademy.com).
 
+The challenge is to produce a digital magazine around user needs and content strategy with a sustainable business model.
+
+**The final deliverables:**
+- 3 pages
+- 10 posts (based on 3 templates)
+- 4 versions of the logo
+
+Pages are permanent, fixed parts of the site. Posts are temporal, or articles (in this case). Pages can include home, 404, and others. Post templates with Advanced Custom Fields plugin allow you to create unique, magazine-style layouts for your articles.
+
+## Timeline
+- **Week 1** *(October 21)* – Project kickoff & creation of project plan, content strategy, & brand positioning
+- **Week 2** *(October 28)* – Creation of logo & identity, page layouts (wireframes), header & footer coded
+- **Week 3** *(November 4)* – Navigation finalized, template coding begins
+- **Week 4** *(November 11)* – Coding of template and styleguide
+- **Week 5** *(November 18)* – User and browser testing; refinements
+- **Week 6** *(November 25)* – Project deadline & presentations
+
+## To-Do List
+
+### Strategy & Planning
 - Determine which social media accounts and sharing options should be enabled
 - Determine necessary templates and design grid for each
 - Plan content strategy and content offerings
 
-## Design
+### Design
 
-- Create logo for service
+#### Branding
+- Create logo (4 responsive versions required)
 
-## Content
+#### User Experience
+- Determine primary methods of navigation & build out pages and menus 
 
+### Content
+- Generate possible tags
 - Add one new article per day (until 11/25)
 
-## Development
+### Development
+- Code header and footer
+- Code template for Feature page ("feature.php")
+- Code template for Review page ("review.php")
+- Code template for Columns page ("single.php")
+- Code template for 404 page ("404.php")
+- Code template for page ("page.php")
 
