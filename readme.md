@@ -28,8 +28,9 @@ Pages are permanent, fixed parts of the site. Posts are temporal, or articles (i
 
 ### Design
 
-#### Branding
+#### Branding & Visual
 - Create logo (4 responsive versions required)
+– Select typeface for headings and body copy
 
 #### User Experience
 - Determine primary methods of navigation & build out pages and menus 
@@ -40,9 +41,12 @@ Pages are permanent, fixed parts of the site. Posts are temporal, or articles (i
 
 ### Development
 - Code header and footer
-- Code template for Feature page ("feature.php")
-- Code template for Review page ("review.php")
+- Code template for Features page ("page-features.php")
+- Code template for single Feature page ("single-feature.php")
+- Code template for Reviews page ("page-reviews.php")
+- Code template for single Review page ("single-review.php")
 - Code template for Columns page ("single.php")
 - Code template for 404 page ("404.php")
 - Code template for page ("page.php")
+- Code template for Home page ("home.php")
 

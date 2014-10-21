@@ -26,7 +26,7 @@
 			 	?>	
 			</div>
 			<div class="col-sm-3">
-				<h6>Partners</h6>
+				<h6>My Account</h6>
 			</div>
 			<div class="col-sm-3">
 				<h6>Social Media</h6>

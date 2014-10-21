@@ -29,6 +29,10 @@ Use it to make something cool, have fun, and share what you've learned with othe
 	max-width: 1000px;
 }
 
+.img-full {
+	width: 100%;
+}
+
 /* Typography
 --------------------------------------------------------
 */
@@ -68,6 +72,13 @@ nav {
 --------------------------------------------------------
 */
 
+/* Reviews Template
+--------------------------------------------------------
+*/
+.review-snippet img {
+	width: 100%;
+	height: auto;
+}
 /* Footer
 --------------------------------------------------------
 */
