@@ -1,0 +1,72 @@
+/*
+Theme Name: Magazine Theme
+Author: Emilie Thaler
+Author URI: http://www.emilie.io;
+Description: A post modern, simple, responsive portfolio theme designed for an online magazine.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: black, white, light, one-column, two-columns, left-sidebar, flexible-width, fluid-layout, responsive-layout, custom-menu, featured-images
+*/
+
+
+/* Global Styles
+--------------------------------------------------------
+*/
+* {
+	box-sizing: border-box;
+	/*outline: 1px solid #eee;*/
+}
+.container-fluid {
+	max-width: 1000px;
+}
+
+/* Typography
+--------------------------------------------------------
+*/
+p, ul, ol, dl, li, table, a {
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+
+}
+
+/* Header & Navigation
+--------------------------------------------------------
+*/
+header {
+	background-color: #1C1815;
+	position: relative;
+}
+nav {
+	display: none;
+}
+.logo {
+	margin: 2em auto;
+	text-align: center;
+}
+.logo a {
+	color: #fff;
+}
+.primary-menu {
+
+}
+.navigation-toggle {
+	color: #fff;
+}
+/* Template: Home Page
+--------------------------------------------------------
+*/
+
+/* Footer
+--------------------------------------------------------
+*/
+.footer-menu {
+	list-style: none;
+	padding-left: 0;
+}
+
+/* Responsive Utilities
+--------------------------------------------------------
+*/
