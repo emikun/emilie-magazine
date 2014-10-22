@@ -27,8 +27,14 @@
 			</div>
 			<div class="col-sm-3">
 				<h6>My Account</h6>
+				<form>
+					<input type="email" placeholder="Email">
+					<input type="password" placeholder="Password">
+					<input type="submit" value="Log In">
+				</form>
+				<a href="#">I don't have an account.</a>
 			</div>
-			<div class="col-sm-3">
+			<div class="col-sm-3 social-media-footer">
 				<h6>Social Media</h6>
 				<!--Twitter--><a href="<?php the_field('twitter_link', 20); ?>"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x fa-inverse"></i></span></a>
 				<!--Facebook--><a href="<?php the_field('facebook_link', 20); ?>"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-facebook fa-stack-1x fa-inverse"></i></span></a>
@@ -43,6 +49,5 @@
 </footer>
 
 <?php wp_footer(); ?>
-
 </body>
 </html>

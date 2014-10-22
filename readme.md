@@ -1,6 +1,6 @@
 # Emilie's WordPress Magazine Project
 
-This WordPress theme has been designed and developed for [Erik Fadiman](http://www.erikfadiman.com)'s Interaction IV class at the [Seattle Central Creative Academy](http://www.seattlecentralcreativeacademy.com).
+This WordPress theme has been designed and developed for [Erik Fadiman](http://www.erikfadiman.com)'s Interaction IV class at the [Seattle Central Creative Academy](http://www.seattlecentralcreativeacademy.com). The project lives at http://www.emiliethaler.com/scca/magazine if you'd like to check it out!
 
 The challenge is to produce a digital magazine around user needs and content strategy with a sustainable business model.
 

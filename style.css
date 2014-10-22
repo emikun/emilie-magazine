@@ -23,7 +23,13 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 * {
 	box-sizing: border-box;
-	/*outline: 1px solid #eee;*/
+/*	outline: 1px solid #eee;
+*/}
+html {
+
+}
+body {
+	font-size: 16px;
 }
 .container-fluid {
 	max-width: 1000px;
@@ -31,19 +37,40 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 .img-full {
 	width: 100%;
+	height: auto;
 }
 
 /* Typography
 --------------------------------------------------------
 */
-p, ul, ol, dl, li, table, a {
-
+p, ul, ol, dl, li, dd, dt, table, a, input, small {
+	font-family: 'Source Sans Pro', sans-serif;
 }
-
 h1, h2, h3, h4, h5, h6 {
-
+	font-family: 'nimbus-sans';
 }
-
+small {
+	font-size: .666666667em;
+}
+.longform {
+	font-size: 1.5em;
+}
+a {
+	color: #FF49D4;
+}
+a:hover {
+	color: #37BAB3;
+	text-decoration: none;
+}
+.text-uppercase {
+	text-transform: uppercase;
+}
+.text-right {
+	text-align: right;
+}
+.text-capitalize {
+	text-transform: capitalize;
+}
 /* Header & Navigation
 --------------------------------------------------------
 */
@@ -55,6 +82,7 @@ nav {
 
 }
 .logo {
+	width: 30%;
 	margin: 2em auto;
 	text-align: center;
 }
@@ -64,10 +92,23 @@ nav {
 .primary-navigation li {
 	list-style: none;
 	display: inline-block;
+	text-transform: uppercase;
+}
+.primary-navigation .current-menu-item {
+	font-weight: bold;
 }
 .navigation-toggle {
 	color: #fff;
 }
+
+/* Forms
+--------------------------------------------------------
+*/
+input {
+	border: 1px solid #B8B8B5;
+}
+
+
 /* Home Page Template
 --------------------------------------------------------
 */
@@ -75,13 +116,59 @@ nav {
 /* Reviews Template
 --------------------------------------------------------
 */
+.review-snippet {
+	background-color
+}
 .review-snippet img {
 	width: 100%;
 	height: auto;
 }
+.review-hero {
+	width: 100%;
+}
+.review-content {
+	margin: -2em 0 2em 0;
+	background-color: #fff;
+}
+.review-content small {
+	display: block;
+	margin: -.6em 0 1em 0;
+	color: #ACABA9;
+}
+.review-details {
+	font-size: .666666667em;
+	margin: 1em 0 1em 0;
+	border: 1px solid #ACABA9;
+}
+.review-rating {
+	font-size: 4em;
+	font-weight: bold;
+	text-align: center;
+}
+.page-links {
+	font-size: .75em;
+}
+.page-links small {
+	display: block;
+}
+.read-more-review {
+}
+.filter-reviews {
+
+}
+.filter-reviews h4 {
+	border-bottom: 1px solid #F145C8;
+	padding-bottom: .2em;
+}
+
 /* Footer
 --------------------------------------------------------
 */
+footer {
+	background-color: #F4F4F0;
+	padding: 1.2em 0 2em 0;
+	margin-top: 2em;
+}
 .footer-menu {
 	list-style: none;
 	padding-left: 0;
@@ -90,6 +177,18 @@ nav {
 .disclaimer {
 	display: block;
 	margin-top: 1em;
+}
+.social-media-footer {
+	font-size: .8em;
+}
+footer input {
+	display: block;
+	margin-bottom: .2em;
+	padding: .2em;
+}
+footer input[type="submit"] {
+	width: 40%;
+	background-color: #B8B8B5;
 }
 
 /* Responsive Utilities
