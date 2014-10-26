@@ -22,33 +22,33 @@ Pages are permanent, fixed parts of the site. Posts are temporal, or articles (i
 ## To-Do List
 
 ### Strategy & Planning
-- Determine which social media accounts and sharing options should be enabled
-- Determine necessary templates and design grid for each
-- Plan content strategy and content offerings
+- [ ] Determine which social media accounts and sharing options should be enabled
+- [ ] Determine necessary templates and design grid for each
+- [ ] Plan content strategy and content offerings
 
 ### Design
 
 #### Branding & Visual
-- [] Create logo (4 responsive versions required)
+- [ ] Create logo (4 responsive versions required)
 - [x] Select typeface for headings and body copy
 
 #### User Experience
-- Determine primary methods of navigation & build out pages and menus 
+- [ ] Determine primary methods of navigation & build out pages and menus 
 
 ### Content
-- Generate possible tags for blog posts
-- Generate possible taxonomies for reviews
-- Add one new article per day (until 11/25)
+- [ ] Generate possible tags for blog posts
+- [ ] Generate possible taxonomies for reviews
+- [ ] Add one new article per day (until 11/25)
 
 ### Development
-- Code header and footer
-- Code template for Features page ("page-features.php")
-- Code template for single Feature page ("single-feature.php")
-- Code template for Reviews page ("page-reviews.php")
-- Code template for single Review page ("single-review.php")
-- Code template for Columns page ("single.php")
-- Code template for 404 page ("404.php")
-- Code template for page ("page.php")
-- Code template for Home page ("home.php")
+- [ ] Code header and footer
+- [ ] Code template for Features page ("page-features.php")
+- [ ] Code template for single Feature page ("single-feature.php")
+- [ ] Code template for Reviews page ("page-reviews.php")
+- [ ] Code template for single Review page ("single-review.php")
+- [ ] Code template for Columns page ("single.php")
+- [ ] Code template for 404 page ("404.php")
+- [ ] Code template for page ("page.php")
+- [ ] Code template for Home page ("home.php")
 
 
