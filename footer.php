@@ -26,13 +26,12 @@
 			 	?>	
 			</div>
 			<div class="col-sm-3">
-				<h6>My Account</h6>
+				<h6>Glitch News</h6>
 				<form>
 					<input type="email" placeholder="Email">
-					<input type="password" placeholder="Password">
-					<input type="submit" value="Log In">
+					<input type="submit" value="Sign up">
 				</form>
-				<a href="#">I don't have an account.</a>
+				<small class="disclaimer"><a href="#">Glitch News is our weekly email of all the week's gaming news. Learn more.</a></small>
 			</div>
 			<div class="col-sm-3 social-media-footer">
 				<h6>Social Media</h6>

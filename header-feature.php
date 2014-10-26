@@ -10,21 +10,9 @@
 </head>
 <body <?php body_class(); ?>>
 
-<header>
+<header class="feature-header">
 	<div class="container-fluid">
 		<!-- <a href="" class="navigation-toggle"><i class="fa fa-bars fa-2x"></i><span class="sr-only">Menu</span></a> -->
-		<h1 class="logo" ><a href="<?php bloginfo('url'); ?>" id="Logo"><img src="<?php echo get_template_directory_uri(); ?>/img/glitch-logo-01.svg" alt=""></a></h1>
-		<?php dynamic_sidebar( 'site_controls' ); ?>
-		<nav>
-			<?php 
-				$defaults = array(
-					'container' => false,
-					'theme_location' => 'primary-menu',
-					'menu_class' => 'primary-navigation',
-					'menu_id' => 'PrimaryMenu'
-				);
-				wp_nav_menu(	$defaults	);
-			 ?>			
-		</nav>
+		<h1 class="logo-feature pull-left"><a href="<?php bloginfo('url'); ?>" id="Logo"><img src="<?php echo get_template_directory_uri(); ?>/img/glitch-logo-01.svg" alt=""></a></h1>
 	</div>
 </header>

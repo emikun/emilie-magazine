@@ -41,4 +41,23 @@ function wpm_theme_js() {
 
 add_action( 'wp_enqueue_scripts', 'wpm_theme_js' );
 
+if (function_exists('register_sidebar')) {
+	register_sidebar(array(
+		'name'=> 'Filter Reviews',
+		'id' => 'filter_reviews',
+		'before_widget' => '<div>',
+		'after_widget' => '</div>',
+		'before_title' => '<h4>',
+		'after_title' => '</h4>',
+	));
+	register_sidebar(array(
+		'name'=> 'Site Controls',
+		'id' => 'site_controls',
+		'before_widget' => '<div class="site-control">',
+		'after_widget' => '</div>',
+		'before_title' => '<h4>',
+		'after_title' => '</h4>',
+	));
+}
+
 ?>

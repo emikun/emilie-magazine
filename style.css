@@ -23,8 +23,8 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 * {
 	box-sizing: border-box;
-/*	outline: 1px solid #eee;
-*/}
+	/*outline: 1px solid #eee;*/
+}
 html {
 
 }
@@ -89,25 +89,39 @@ nav {
 .logo a {
 	color: #fff;
 }
+.primary-navigation {
+	text-align: center;
+	margin-bottom: 2em;
+}
 .primary-navigation li {
 	list-style: none;
 	display: inline-block;
 	text-transform: uppercase;
+	padding-right: 2em;
+}
+.primary-navigation li:last-of-type {
+	padding-right:;
 }
 .primary-navigation .current-menu-item {
-	font-weight: bold;
+	/*font-weight: bold;*/
 }
 .navigation-toggle {
 	color: #fff;
 }
-
+.logo-feature {
+	width: 5%;
+}
+.site-control {
+	position: absolute;
+	top: 40px;
+	right: 40px;
+}
 /* Forms
 --------------------------------------------------------
 */
 input {
 	border: 1px solid #B8B8B5;
 }
-
 
 /* Home Page Template
 --------------------------------------------------------
