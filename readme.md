@@ -30,7 +30,7 @@ Pages are permanent, fixed parts of the site. Posts are temporal, or articles (i
 
 #### Branding & Visual
 - Create logo (4 responsive versions required)
-~~ – Select typeface for headings and body copy~~
+– ~~Select typeface for headings and body copy~~
 
 #### User Experience
 - Determine primary methods of navigation & build out pages and menus 
@@ -50,4 +50,5 @@ Pages are permanent, fixed parts of the site. Posts are temporal, or articles (i
 - Code template for 404 page ("404.php")
 - Code template for page ("page.php")
 - Code template for Home page ("home.php")
+
 
