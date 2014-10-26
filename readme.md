@@ -29,8 +29,8 @@ Pages are permanent, fixed parts of the site. Posts are temporal, or articles (i
 ### Design
 
 #### Branding & Visual
-- Create logo (4 responsive versions required)
-– ~~Select typeface for headings and body copy~~
+* Create logo (4 responsive versions required)
+* ~~Select typeface for headings and body copy~~
 
 #### User Experience
 - Determine primary methods of navigation & build out pages and menus 
