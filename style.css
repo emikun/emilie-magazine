@@ -109,7 +109,8 @@ nav {
 	color: #fff;
 }
 .logo-feature {
-	width: 5%;
+	width: 10%;
+	padding: 1em 0;
 }
 .site-control {
 	position: absolute;
@@ -173,6 +174,13 @@ input {
 .filter-reviews h4 {
 	border-bottom: 1px solid #F145C8;
 	padding-bottom: .2em;
+}
+
+/* Features Template
+--------------------------------------------------------
+*/
+.feature-hero {
+	height: 100%;
 }
 
 /* Footer

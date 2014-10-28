@@ -12,12 +12,12 @@ The challenge is to produce a digital magazine around user needs and content str
 Pages are permanent, fixed parts of the site. Posts are temporal, or articles (in this case). Pages can include home, 404, and others. Post templates with Advanced Custom Fields plugin allow you to create unique, magazine-style layouts for your articles.
 
 ## Timeline
-- **Week 1** *(October 21)* – Project kickoff & creation of project plan, content strategy, & brand positioning
-- **Week 2** *(October 28)* – Creation of logo & identity, page layouts (wireframes), header & footer coded
-- **Week 3** *(November 4)* – Navigation finalized, template coding begins
-- **Week 4** *(November 11)* – Coding of template and styleguide
-- **Week 5** *(November 18)* – User and browser testing; refinements
-- **Week 6** *(November 25)* – Project deadline & presentations
+- [x] **Week 1** *(October 21)* – Project kickoff & creation of project plan, content strategy, & brand positioning
+- [ ] **Week 2** *(October 28)* – Creation of logo & identity, page layouts (wireframes), header & footer coded
+- [ ] **Week 3** *(November 4)* – Navigation finalized, template coding begins
+- [ ] **Week 4** *(November 11)* – Coding of template and styleguide
+- [ ] **Week 5** *(November 18)* – User and browser testing; refinements
+- [ ] **Week 6** *(November 25)* – Project deadline & presentations
 
 ## To-Do List
 

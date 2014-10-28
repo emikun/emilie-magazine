@@ -13,6 +13,6 @@
 <header class="feature-header">
 	<div class="container-fluid">
 		<!-- <a href="" class="navigation-toggle"><i class="fa fa-bars fa-2x"></i><span class="sr-only">Menu</span></a> -->
-		<h1 class="logo-feature pull-left"><a href="<?php bloginfo('url'); ?>" id="Logo"><img src="<?php echo get_template_directory_uri(); ?>/img/glitch-logo-01.svg" alt=""></a></h1>
+		<a href="<?php bloginfo('url'); ?>" id="Logo"><img src="<?php echo get_template_directory_uri(); ?>/img/glitch-logo-01.svg" class="logo-feature pull-left" alt=""></a>
 	</div>
 </header>
