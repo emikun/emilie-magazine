@@ -26,15 +26,15 @@ Use it to make something cool, have fun, and share what you've learned with othe
 	/*outline: 1px solid #eee;*/
 }
 html {
-
+	height: 100%;
 }
 body {
 	font-size: 16px;
+	height: 100%;
 }
 .container-fluid {
 	max-width: 1000px;
 }
-
 .img-full {
 	width: 100%;
 	height: auto;
@@ -132,7 +132,6 @@ input {
 --------------------------------------------------------
 */
 .review-snippet {
-	background-color
 }
 .review-snippet img {
 	width: 100%;
@@ -160,6 +159,11 @@ input {
 	font-weight: bold;
 	text-align: center;
 }
+.review-snippet-content {
+	background-color: #F4F4F0;
+	margin-bottom: 0;
+	padding: .4em;
+}
 .page-links {
 	font-size: .75em;
 }
@@ -167,6 +171,10 @@ input {
 	display: block;
 }
 .read-more-review {
+	background-color: #37BAB3;
+	color: #fff;
+	display: block;
+	padding: .4em;
 }
 .filter-reviews {
 
@@ -181,8 +189,18 @@ input {
 */
 .feature-hero {
 	height: 100%;
+	background-color: #FFE452;
 }
-
+.feature-lead {
+	text-align: center;
+}
+.read-more {
+	display: block;
+	width: 20%;
+	margin: 0 auto;
+	background-color: #ACABA9;
+	padding: .3em;
+}
 /* Footer
 --------------------------------------------------------
 */

@@ -41,7 +41,8 @@ Pages are permanent, fixed parts of the site. Posts are temporal, or articles (i
 - [ ] Add one new article per day (until 11/25)
 
 ### Development
-- [ ] Code header and footer
+- [ ] Code header
+- [x] Code footer
 - [ ] Code template for Features page ("page-features.php")
 - [ ] Code template for single Feature page ("single-feature.php")
 - [ ] Code template for Reviews page ("page-reviews.php")
