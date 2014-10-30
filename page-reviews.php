@@ -14,15 +14,16 @@
  ?>
 
 <div class="container-fluid">
-	<h1><?php the_title(); ?></h1>
+	<h1 class="text-uppercase"><?php the_title(); ?></h1>
+	<hr>
 	<div class="row">
-		<div class="col-md-12">
+		<div class="col-sm-12">
 			<div class="row">
 				<?php if (	$query->have_posts()	) : while (	$query->have_posts()	) : $query->the_post(); ?>
-				<div class="col-md-4 review-snippet">
+				<div class="col-sm-4 review-snippet">
 					<h4 class="snippet-title"><?php the_title(); ?></h4>
 					<a href="<?php the_permalink(); ?>">
-						<?php the_post_thumbnail(); ?>
+						<?php the_post_thumbnail('large', array( 'class' => 'review-snippet-img' ) ); ?>
 					</a>
 					<p class="review-snippet-content"><?php echo strip_tags( get_the_excerpt()	); ?></p>
 					<a class="read-more-review" href="<?php the_permalink(); ?>">Read more <i class="fa fa-arrow-right"></i></a>
@@ -32,4 +33,13 @@
 		</div>
 	</div>
 </div>
+<script>
+	var $ =jQuery.noConflict();
+	$(function() {
+    	$('.review-snippet-content').matchHeight();
+    	$('.snippet-title').matchHeight();
+    	$('.review-snippet a img').matchHeight();
+	});
+</script>
+
 <?php get_footer(); ?>

@@ -22,7 +22,7 @@
 				<div class="col-md-6 review-snippet">
 					<h4 class="snippet-title"><?php the_title(); ?></h4>
 					<a href="<?php the_permalink(); ?>">
-						<?php the_post_thumbnail(); ?>
+						<?php the_post_thumbnail('large', array( 'class' => 'feature-snippet-img' ) ); ?>
 					</a>
 					<p><?php echo strip_tags( get_the_excerpt()	); ?></p>
 					<a class="read-more-review" href="<?php the_permalink(); ?>">Read more <i class="fa fa-arrow-right"></i></a>

@@ -60,4 +60,47 @@ if (function_exists('register_sidebar')) {
 	));
 }
 
+add_filter(	'mce_buttons_2', 'my_mce_buttons_2');
+
+function my_mce_buttons_2( $buttons ) {
+	array_unshift( $buttons, 'styleselect');
+	return $buttons;
+}
+
+add_filter( 'tiny_mce_before_init', 'my_mce_before_init' );
+
+function my_mce_before_init( $settings ) {
+
+    $style_formats = array(
+    	array(
+    		'title' => 'Citation',
+    		'selector' => 'a',
+    		'classes' => 'citation'
+    	),
+        array(
+        	'title' => 'Pullquote',
+        	'block' => 'blockquote',
+        	'classes' => 'pull-quote'
+        ),
+        array(
+        	'title' => 'Pullimage',
+        	'block' => 'selector',
+        	'class'=> 'img-full'
+        ),
+        array(
+        	'title' => 'Post Image',
+        	'block' => 'div',
+        	'class'=> 'pull-image'
+        )
+    );
+    $settings['style_formats'] = json_encode( $style_formats );
+    return $settings;
+}
+
+add_action( 'admin_init', 'add_my_editor_style' );
+
+function add_my_editor_style() {
+	add_editor_style();
+}
+
 ?>

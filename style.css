@@ -39,12 +39,21 @@ body {
 	width: 100%;
 	height: auto;
 }
+.pull-image {
+	float: right;
+	margin: 1em -4em 1em 1em;
+	border-left: 4px solid #37BAB3;
+	padding-left: 1em;
 
+}
 /* Typography
 --------------------------------------------------------
 */
 p, ul, ol, dl, li, dd, dt, table, a, input, small {
 	font-family: 'Source Sans Pro', sans-serif;
+}
+p {
+	margin-bottom: .6em;
 }
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'nimbus-sans';
@@ -71,11 +80,32 @@ a:hover {
 .text-capitalize {
 	text-transform: capitalize;
 }
+hr {
+	border: 0;
+	height: 2px;
+	background-color: #FFE452;
+}
+.block-quote {
+	font-size: 1.2em;
+	line-height: 1.1em;
+	font-weight: bold;
+	float: left;
+	width: 30%;
+	margin-left: -15%;
+	text-align: right;
+	border-left: 0;
+	border-right: 4px solid #FFE452;
+	margin-right: 1em;
+}
+
+dl dt {
+	margin-bottom: .4em;
+}
 /* Header & Navigation
 --------------------------------------------------------
 */
 header {
-	background-color: #1C1815;
+	/*background-color: #FFE452;*/
 	position: relative;
 }
 nav {
@@ -83,7 +113,7 @@ nav {
 }
 .logo {
 	width: 30%;
-	margin: 2em auto;
+	margin: .5em auto;
 	text-align: center;
 }
 .logo a {
@@ -133,12 +163,13 @@ input {
 */
 .review-snippet {
 }
-.review-snippet img {
+.review-snippet-img {
 	width: 100%;
 	height: auto;
 }
 .review-hero {
 	width: 100%;
+	max-height: 500px;
 }
 .review-content {
 	margin: -2em 0 2em 0;
@@ -149,20 +180,33 @@ input {
 	margin: -.6em 0 1em 0;
 	color: #ACABA9;
 }
-.review-details {
-	font-size: .666666667em;
-	margin: 1em 0 1em 0;
-	border: 1px solid #ACABA9;
+.review-details dt {
+	margin-top: -.4em;
 }
 .review-rating {
 	font-size: 4em;
 	font-weight: bold;
 	text-align: center;
+	border: 6px solid #B4FF5F;
+	border-radius: 100%;
+	width: 50%;
+	height: auto;
+	margin: .5em auto;
+	background-color: #fff;
+}
+.review-sidebar {
+	padding: 1em;
+	font-size: .666666667em;
+	background-color: #F4F4F0;
 }
 .review-snippet-content {
 	background-color: #F4F4F0;
 	margin-bottom: 0;
 	padding: .4em;
+	display: block;
+}
+.review-snippet-title {
+	padding-top: 1em;
 }
 .page-links {
 	font-size: .75em;
@@ -183,6 +227,9 @@ input {
 	border-bottom: 1px solid #F145C8;
 	padding-bottom: .2em;
 }
+dt.definiton-review {
+	font-size: .3em !important;
+}
 
 /* Features Template
 --------------------------------------------------------
@@ -200,6 +247,26 @@ input {
 	margin: 0 auto;
 	background-color: #ACABA9;
 	padding: .3em;
+}
+.feature-snippet-img {
+	width: 100%;
+	height: auto;
+}
+/* Single Blog Post Templates
+--------------------------------------------------------
+*/
+.info-text {
+	font-size: .6em;
+}
+.info-left {
+	border-right:1px solid #F145C8;
+}
+.single-tags {
+	border: 1px solid #F145C8;
+}
+.single-title {
+	color: #1C1815;
+	text-align: center;
 }
 /* Footer
 --------------------------------------------------------
