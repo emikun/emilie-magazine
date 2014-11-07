@@ -11,7 +11,7 @@
 		'post_type' => 'review'
 	);
 	$query = new WP_Query(	$args	);
- ?>
+?>
 
 <div class="container-fluid">
 	<h1 class="text-uppercase"><?php the_title(); ?></h1>

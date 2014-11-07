@@ -31,6 +31,7 @@ html {
 body {
 	font-size: 16px;
 	height: 100%;
+	position: relative;
 }
 .container-fluid {
 	max-width: 1000px;
@@ -42,9 +43,14 @@ body {
 .pull-image {
 	float: right;
 	margin: 1em -4em 1em 1em;
-	border-left: 4px solid #37BAB3;
+	border-left: 4px solid #FB8073;
 	padding-left: 1em;
-
+}
+.block-link-center {
+	display: block;
+	margin: 0 auto;
+	width: 5%;
+	color: #ADADAA;
 }
 /* Typography
 --------------------------------------------------------
@@ -65,10 +71,10 @@ small {
 	font-size: 1.5em;
 }
 a {
-	color: #FF49D4;
+	color: #FE687A;
 }
 a:hover {
-	color: #37BAB3;
+	color: #6F5874;
 	text-decoration: none;
 }
 .text-uppercase {
@@ -83,7 +89,7 @@ a:hover {
 hr {
 	border: 0;
 	height: 2px;
-	background-color: #FFE452;
+	background-color: #FBD16B;
 }
 .block-quote {
 	font-size: 1.2em;
@@ -105,38 +111,13 @@ dl dt {
 --------------------------------------------------------
 */
 header {
-	/*background-color: #FFE452;*/
 	position: relative;
-}
-nav {
-
-}
-.logo {
-	width: 30%;
-	margin: .5em auto;
-	text-align: center;
-}
-.logo a {
-	color: #fff;
-}
-.primary-navigation {
-	text-align: center;
-	margin-bottom: 2em;
-}
-.primary-navigation li {
-	list-style: none;
-	display: inline-block;
-	text-transform: uppercase;
-	padding-right: 2em;
-}
-.primary-navigation li:last-of-type {
-	padding-right:;
-}
-.primary-navigation .current-menu-item {
-	/*font-weight: bold;*/
 }
 .navigation-toggle {
 	color: #fff;
+}
+.navbar-brand img{
+	height: 100%;
 }
 .logo-feature {
 	width: 10%;
@@ -147,11 +128,20 @@ nav {
 	top: 40px;
 	right: 40px;
 }
+.navbar {
+	background-color: #F4F4F0;
+	border-bottom: none;
+}
+.navbar ul li a {
+	color: #FE687A !important;
+	text-transform: uppercase;
+}
 /* Forms
 --------------------------------------------------------
 */
-input {
+input, button {
 	border: 1px solid #B8B8B5;
+	border-radius: none;
 }
 
 /* Home Page Template
@@ -162,6 +152,7 @@ input {
 --------------------------------------------------------
 */
 .review-snippet {
+	margin-bottom: 1em;
 }
 .review-snippet-img {
 	width: 100%;
@@ -215,7 +206,7 @@ input {
 	display: block;
 }
 .read-more-review {
-	background-color: #37BAB3;
+	background-color: #FB8073;
 	color: #fff;
 	display: block;
 	padding: .4em;
@@ -236,7 +227,7 @@ dt.definiton-review {
 */
 .feature-hero {
 	height: 100%;
-	background-color: #FFE452;
+	background-color: #6F5874;
 }
 .feature-lead {
 	text-align: center;
@@ -245,12 +236,74 @@ dt.definiton-review {
 	display: block;
 	width: 20%;
 	margin: 0 auto;
-	background-color: #ACABA9;
+	background-color: #2E2F43;
 	padding: .3em;
 }
 .feature-snippet-img {
 	width: 100%;
 	height: auto;
+}
+.single-feature h2 {
+	text-align: center;
+	margin-bottom: 1em;
+}
+.feature-section {
+	padding: 2em 0;
+}
+.inner-page-nav {
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+}
+.inner-page-nav ul {
+	list-style: none;
+}
+.inner-page-nav a.current {
+	color: red;
+}
+.feature-part-1 {
+	background-color: #364059;
+	background-image: -webkit-gradient(
+	linear,
+	right top,
+	right bottom,
+	color-stop(0, #FBD26B),
+	color-stop(1, #FB8173),
+	color-stop(1, #F29991)
+	);
+	background-image: -o-linear-gradient(bottom, #FBD26B 0%, #FB8173 100%, #F29991 100%);
+	background-image: -moz-linear-gradient(bottom, #FBD26B 0%, #FB8173 100%, #F29991 100%);
+	background-image: -webkit-linear-gradient(bottom, #FBD26B 0%, #FB8173 100%, #F29991 100%);
+	background-image: -ms-linear-gradient(bottom, #FBD26B 0%, #FB8173 100%, #F29991 100%);
+	background-image: linear-gradient(to bottom, #FBD26B 0%, #FB8173 100%, #F29991 100%);
+	color: #fff;
+}
+.feature-part-2 {
+	background-color: #364059;
+	color: #fff;
+}
+.feature-part-3 {}
+.feature-part-4 {}
+.feature-part-5 {}
+.scene,
+.layer {
+  display: block;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+.layer {
+  position: absolute;
+}
+.layer img {
+	width: 100%;
+}
+.single-container {
+	background: url('img/glitchy.png') repeat fixed;
+}
+.feature-interview {
+	background-color: #fff;
 }
 /* Single Blog Post Templates
 --------------------------------------------------------

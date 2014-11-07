@@ -13,8 +13,8 @@ Pages are permanent, fixed parts of the site. Posts are temporal, or articles (i
 
 ## Timeline
 - [x] **Week 1** *(October 21)* – Project kickoff & creation of project plan, content strategy, & brand positioning
-- [ ] **Week 2** *(October 28)* – Creation of logo & identity, page layouts (wireframes), header & footer coded
-- [ ] **Week 3** *(November 4)* – Navigation finalized, template coding begins
+- [x] **Week 2** *(October 28)* – Creation of logo & identity, page layouts (wireframes), header & footer coded
+- [x] **Week 3** *(November 4)* – Navigation finalized, template coding begins
 - [ ] **Week 4** *(November 11)* – Coding of template and styleguide
 - [ ] **Week 5** *(November 18)* – User and browser testing; refinements
 - [ ] **Week 6** *(November 25)* – Project deadline & presentations
@@ -22,21 +22,21 @@ Pages are permanent, fixed parts of the site. Posts are temporal, or articles (i
 ## To-Do List
 
 ### Strategy & Planning
-- [ ] Determine which social media accounts and sharing options should be enabled
-- [ ] Determine necessary templates and design grid for each
-- [ ] Plan content strategy and content offerings
+- [x] Determine which social media accounts and sharing options should be enabled
+- [x] Determine necessary templates and design grid for each
+- [x] Plan content strategy and content offerings
 
 ### Design
 
 #### Branding & Visual
-- [ ] Create logo (4 responsive versions required)
+- [x] Create logo (4 responsive versions required)
 - [x] Select typeface for headings and body copy
 
 #### User Experience
 - [ ] Determine primary methods of navigation & build out pages and menus 
 
 ### Content
-- [ ] Generate possible tags for blog posts
+- [x] Generate possible tags for blog posts
 - [ ] Generate possible taxonomies for reviews
 - [ ] Add one new article per day (until 11/25)
 

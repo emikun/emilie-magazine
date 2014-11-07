@@ -37,6 +37,7 @@ function wpm_theme_js() {
 	wp_enqueue_script(	'wow_js', get_template_directory_uri() . '/js/wow.min.js', array(	'jquery'	),'', false);
 	wp_enqueue_script(	'bootstrap_js', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js', array(	'jquery'	), '', false);
 	wp_enqueue_script(	'matchheight_js', get_template_directory_uri() . '/js/match-height.min.js', array(	'jquery'	),'', false);
+	wp_enqueue_script(	'matchheight_js', get_template_directory_uri() . '/js/parallax.js', array(	'jquery'	),'', false);
 }
 
 add_action( 'wp_enqueue_scripts', 'wpm_theme_js' );
@@ -91,6 +92,11 @@ function my_mce_before_init( $settings ) {
         	'title' => 'Post Image',
         	'block' => 'div',
         	'class'=> 'pull-image'
+        ),
+        array(
+        	'title' =>'Full Image',
+        	'selector' => 'img',
+        	'classes' => 'img-full'
         )
     );
     $settings['style_formats'] = json_encode( $style_formats );
