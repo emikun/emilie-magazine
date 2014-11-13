@@ -37,9 +37,10 @@
 				<h6>Social Media</h6>
 				<!--Twitter--><a href="<?php the_field('twitter_link', 20); ?>"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x fa-inverse"></i></span></a>
 				<!--Facebook--><a href="<?php the_field('facebook_link', 20); ?>"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-facebook fa-stack-1x fa-inverse"></i></span></a>
-				<!--Pinterest--><a href="<?php the_field('pinterest_link', 20); ?>"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-youtube fa-stack-1x fa-inverse"></i></span></a>
-				<!--Instagram--><a href="<?php the_field('instagram_link', 20); ?>"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-instagram fa-stack-1x fa-inverse"></i></span></a>
 				<!--Google Plus--><a href="<?php the_field('google_plus_link', 20); ?>"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-google-plus fa-stack-1x fa-inverse"></i></span></a>
+				<!-- YouTube --><a href="<?php the_field('youtube_link', 20); ?>"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-youtube fa-stack-1x fa-inverse"></i></span></a>
+				<!-- RSS --><a href=""><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-rss fa-stack-1x fa-inverse"></i></span></a>
+
 			</div>
 		</div>
 		<small>&copy; <?php echo date('Y'); echo ' '; echo bloginfo('name'); ?></small>

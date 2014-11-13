@@ -2,6 +2,7 @@
 
 add_theme_support(	'menus'	);
 add_theme_support(	'post-thumbnails'	);
+add_theme_support( 'html5', array( 'search-form' ) );
 
 function wpt_excerpt_length( $length ) {
 	return 40;
@@ -44,17 +45,25 @@ add_action( 'wp_enqueue_scripts', 'wpm_theme_js' );
 
 if (function_exists('register_sidebar')) {
 	register_sidebar(array(
-		'name'=> 'Filter Reviews',
-		'id' => 'filter_reviews',
+		'name'=> 'Most Recent Features',
+		'id' => 'recent_features',
 		'before_widget' => '<div>',
 		'after_widget' => '</div>',
 		'before_title' => '<h4>',
 		'after_title' => '</h4>',
 	));
 	register_sidebar(array(
-		'name'=> 'Site Controls',
-		'id' => 'site_controls',
-		'before_widget' => '<div class="site-control">',
+		'name'=> 'Most Recent Reviews',
+		'id' => 'recent_reviews',
+		'before_widget' => '<div>',
+		'after_widget' => '</div>',
+		'before_title' => '<h4>',
+		'after_title' => '</h4>',
+	));
+	register_sidebar(array(
+		'name'=> 'Most Recent Columns',
+		'id' => 'recent_columns',
+		'before_widget' => '<div>',
 		'after_widget' => '</div>',
 		'before_title' => '<h4>',
 		'after_title' => '</h4>',

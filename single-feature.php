@@ -25,7 +25,12 @@
 		</div>
 	</div>
 </div>
-
+<header class="feature-header">
+	<div class="container-fluid">
+		<!-- <a href="" class="navigation-toggle"><i class="fa fa-bars fa-2x"></i><span class="sr-only">Menu</span></a> -->
+		<a href="<?php bloginfo('url'); ?>" id="Logo"><img src="<?php echo get_template_directory_uri(); ?>/img/glitch-logo-01.svg" class="logo-feature pull-left" alt=""></a>
+	</div>
+</header>
 <div id="Part1" class="feature-section feature-part-1 longform"><div class="container-fluid"><?php the_field('part_1'); ?><a href="#Part2" class="block-link-center"><i class="fa fa-chevron-circle-down"></i></a></div></div>
 <div id="Part2" class="feature-section feature-part-2 longform"><div class="container-fluid"><?php the_field('part_2'); ?><a href="#Part3" class="block-link-center"><i class="fa fa-chevron-circle-down"></i></a></div></div>
 <div id="Part3" class="feature-section feature-part-3 longform"><div class="container-fluid feature-interview"><?php the_field('part_3'); ?><a href="#Part4" class="block-link-center"><i class="fa fa-chevron-circle-down"></i></a></div></div>

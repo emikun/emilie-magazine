@@ -33,13 +33,16 @@
 				);
 				wp_nav_menu(	$defaults	);
 			 ?>	
-	      <form class="navbar-form navbar-left pull-right" role="search">
+	      <form class="navbar-form navbar-right" role="search">
 	        <div class="form-group">
-	          <input type="text" class="form-control" placeholder="Search">
+	          <input type="text" class="form-control empty" placeholder="&#xF002;">
 	        </div>
-	        <button type="submit" class="btn btn-default">Submit</button>
 	      </form>
 	    </div><!-- /.navbar-collapse -->
 	  </div><!-- /.container-fluid -->
 	</nav>
-</header>
+<!-- </header>
+<?php dynamic_sidebar('recent_features'); ?>
+<?php dynamic_sidebar('recent_reviews'); ?>
+<?php dynamic_sidebar('recent_columns'); ?>
+<?php dynamic_sidebar('recent_videos'); ?> -->

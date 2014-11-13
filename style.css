@@ -131,6 +131,13 @@ header {
 .navbar {
 	background-color: #F4F4F0;
 	border-bottom: none;
+	margin-bottom: 0;
+}
+.navbar ul li {
+	border-left: 1px solid #D5D5D2;
+}
+.navbar ul li:last-of-type {
+	border-right: 1px solid #D5D5D2;
 }
 .navbar ul li a {
 	color: #FE687A !important;
@@ -140,8 +147,25 @@ header {
 --------------------------------------------------------
 */
 input, button {
-	border: 1px solid #B8B8B5;
-	border-radius: none;
+	border: 1px solid #D5D5D2;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	-ms-border-radius: 0;
+	-o-border-radius: 0;
+	border-radius: 0;
+}
+.btn, .form-control {
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	-ms-border-radius: 0;
+	-o-border-radius: 0;
+	border-radius: 0;
+}
+input.empty {
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
 }
 
 /* Home Page Template
@@ -153,6 +177,23 @@ input, button {
 */
 .review-snippet {
 	margin-bottom: 1em;
+}
+.review-link {
+	display: block;
+	position: relative;
+}
+.review-snippet-rating {
+	top: 0;
+	left: 0;
+	width: 50px;
+	height: 50px;
+	color: white;
+	position: absolute;
+	background-color: #FBD16B;
+	padding: 5px 0;
+	text-align: center;
+	font-size: 1.6em;
+	font-weight: bold;
 }
 .review-snippet-img {
 	width: 100%;
@@ -221,7 +262,9 @@ input, button {
 dt.definiton-review {
 	font-size: .3em !important;
 }
-
+.review-game-cover .image-cover {
+	width: 100%;
+}
 /* Features Template
 --------------------------------------------------------
 */
@@ -357,7 +400,7 @@ footer input[type="submit"] {
 
 /* Extra Small */
 @media (max-width:768px) {
-
+	
 }
 /* Small */
 @media (max-width:992px) {

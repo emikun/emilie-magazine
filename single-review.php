@@ -26,7 +26,7 @@
 			</div>
 			<div class="review-game-cover">
 				<h5 class="review-sidebar-title"><i class="fa fa-shopping-cart"></i> Purchase</h5>
-				<img src="<?php the_field('review_game_cover');?>" alt="<?php the_title(); ?> Cover">
+				<img class="image-cover" src="<?php the_field('review_game_cover');?>" alt="<?php the_title(); ?> Cover">
 				<br>
 				<a href=""><img src="<?php echo get_template_directory_uri(); ?>/img/amazon.svg" alt="" height="16px"> Purchase through Amazon</a><br>
 				<a href=""><img src="<?php echo get_template_directory_uri(); ?>/img/steam.svg" alt="" height="16px"> Purchase through Steam</a>

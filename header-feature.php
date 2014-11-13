@@ -9,10 +9,3 @@
 	<?php wp_head(); ?><!--This must remain at the end of the head.-->
 </head>
 <body <?php body_class(); ?>>
-
-<header class="feature-header">
-	<div class="container-fluid">
-		<!-- <a href="" class="navigation-toggle"><i class="fa fa-bars fa-2x"></i><span class="sr-only">Menu</span></a> -->
-		<a href="<?php bloginfo('url'); ?>" id="Logo"><img src="<?php echo get_template_directory_uri(); ?>/img/glitch-logo-01.svg" class="logo-feature pull-left" alt=""></a>
-	</div>
-</header>
