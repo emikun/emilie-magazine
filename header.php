@@ -12,7 +12,7 @@
 
 <header>
 	<nav class="navbar navbar-default" role="navigation">
-	  <div class="container-fluid">
+	  <div class="container-fluid hover-menu">
 	    <!-- Brand and toggle get grouped for better mobile display -->
 	    <div class="navbar-header">
 	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -33,16 +33,97 @@
 				);
 				wp_nav_menu(	$defaults	);
 			 ?>	
-	      <form class="navbar-form navbar-right" role="search">
-	        <div class="form-group">
-	          <input type="text" class="form-control empty" placeholder="&#xF002;">
-	        </div>
-	      </form>
+		<?php get_search_form(); ?>
 	    </div><!-- /.navbar-collapse -->
 	  </div><!-- /.container-fluid -->
 	</nav>
-<!-- </header>
-<?php dynamic_sidebar('recent_features'); ?>
-<?php dynamic_sidebar('recent_reviews'); ?>
-<?php dynamic_sidebar('recent_columns'); ?>
-<?php dynamic_sidebar('recent_videos'); ?> -->
+	<div class="container-fluid header-hover-menu hidden hidden-sm" id="RecentFeatures">
+		<div class="row">
+			<?php $args = array(
+				'posts_per_page' => 4,
+		    	'offset' => 0,
+		    	'category' => 0,
+		    	'orderby' => 'post_date',
+		    	'order' => 'DESC',
+		    	'include' => '',
+		    	'exclude' => '',
+		    	'meta_key' => '',
+		    	'meta_value' => '',
+				'post_type' => 'feature',
+				'post_status' => 'publish',
+	    		'suppress_filters' => true 
+			);
+			$query = new WP_Query(	$args	);?>
+			<?php if ($query->have_posts()	) : while ($query->have_posts()	) : $query->the_post(); ?>
+			<div class="col-sm-3">
+				<a href="<?php the_permalink(); ?>" class="header-hover-link">
+					<?php the_post_thumbnail('large', array( 'class' => 'feature-snippet-img consistency-filter' ) ); ?>
+					<h4 class="header-hover-title"><?php the_title(); ?></h4>
+				</a>
+			</div>
+			<?php endwhile; endif; wp_reset_postdata(); ?>
+		</div>
+	</div>
+<div class="container-fluid header-hover-menu hidden hidden-sm" id="RecentReviews">
+		<div class="row">
+			<?php $args = array(
+				'posts_per_page' => 4,
+		    	'offset' => 0,
+		    	'category' => 0,
+		    	'orderby' => 'post_date',
+		    	'order' => 'DESC',
+		    	'include' => '',
+		    	'exclude' => '',
+		    	'meta_key' => '',
+		    	'meta_value' => '',
+				'post_type' => 'review',
+				'post_status' => 'publish',
+	    		'suppress_filters' => true 
+			);$query = new WP_Query(	$args	);?>
+			<?php if ($query->have_posts()	) : while ($query->have_posts()	) : $query->the_post(); ?>
+			<div class="col-sm-3">
+				<a href="<?php the_permalink(); ?>" class="header-hover-link">
+					<?php the_post_thumbnail('large', array( 'class' => 'feature-snippet-img consistency-filter' ) ); ?>
+					<h4 class="header-hover-title">Review: <?php the_title(); ?></h4>
+				</a>
+			</div>
+			<?php endwhile; endif; wp_reset_postdata(); ?>
+		</div>
+	</div>
+<div class="container-fluid header-hover-menu hidden hidden-sm" id="RecentColumns">
+		<div class="row">
+			<?php $args = array(
+				'posts_per_page' => 4,
+		    	'offset' => 0,
+		    	'category' => 0,
+		    	'orderby' => 'post_date',
+		    	'order' => 'DESC',
+		    	'include' => '',
+		    	'exclude' => '',
+		    	'meta_key' => '',
+		    	'meta_value' => '',
+				'post_type' => 'post',
+				'post_status' => 'publish',
+	    		'suppress_filters' => true 
+			);$query = new WP_Query(	$args	);?>
+			<?php if ($query->have_posts()	) : while ($query->have_posts()	) : $query->the_post(); ?>
+			<div class="col-sm-3">
+				<a href="<?php the_permalink(); ?>" class="header-hover-link">
+					<?php the_post_thumbnail('large', array( 'class' => 'feature-snippet-img consistency-filter' ) ); ?>
+					<h4 class="header-hover-title"><?php the_title(); ?></h4>
+				</a>
+			</div>
+			<?php endwhile; endif; wp_reset_postdata(); ?>
+		</div>
+	</div>
+</header>
+
+<script>
+	var $ =jQuery.noConflict();
+	$(document).ready(function(){
+		$('.menu-item-62').mouseover(function(){
+			$('#RecentFeatures').removeClass('hidden');
+		});
+	});
+</script>
+

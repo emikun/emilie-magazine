@@ -17,7 +17,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 
 
-/* Global Styles
+/* Global Styles & Images
 --------------------------------------------------------
 */
 
@@ -52,6 +52,16 @@ body {
 	width: 5%;
 	color: #ADADAA;
 }
+.consistency-filter {
+	-webkit-filter: grayscale(70%);
+  	filter: grayscale(70%);
+}
+.consistency-filter:hover {
+	-webkit-filter: none;
+	filter: none;
+	transition: .5s;
+}
+
 /* Typography
 --------------------------------------------------------
 */
@@ -130,24 +140,45 @@ header {
 }
 .navbar {
 	background-color: #F4F4F0;
-	border-bottom: none;
+	border-bottom: 1px solid #E3E3DF;
 	margin-bottom: 0;
 }
 .navbar ul li {
-	border-left: 1px solid #D5D5D2;
+	border-left: 1px solid #E3E3DF;
 }
 .navbar ul li:last-of-type {
-	border-right: 1px solid #D5D5D2;
+	border-right: 1px solid #E3E3DF;
 }
 .navbar ul li a {
 	color: #FE687A !important;
 	text-transform: uppercase;
 }
+.header-hover-menu {
+	background-color: #F4F4F0;
+	border-left: 1px solid #E3E3DF;
+	border-right: 1px solid #E3E3DF;
+	border-bottom: 1px solid #E3E3DF;	
+	border-top: 0;
+	padding: 1em 0;
+	height: 200px;
+	z-index: 99;
+}
+.header-hover-link {
+	position: relative;
+	padding: 1em;
+}
+.header-hover-title {
+	position: absolute;
+	bottom: 4px;
+	left: 20px;
+	color: #fff;
+	padding-right: 10px;
+}
 /* Forms
 --------------------------------------------------------
 */
 input, button {
-	border: 1px solid #D5D5D2;
+	border: 1px solid #E3E3DF;
 	-webkit-border-radius: 0;
 	-moz-border-radius: 0;
 	-ms-border-radius: 0;
@@ -160,6 +191,7 @@ input, button {
 	-ms-border-radius: 0;
 	-o-border-radius: 0;
 	border-radius: 0;
+	box-shadow: none;
 }
 input.empty {
     font-family: FontAwesome;
@@ -404,7 +436,9 @@ footer input[type="submit"] {
 }
 /* Small */
 @media (max-width:992px) {
-
+	.header-hover-menu {
+		display: none;
+	}
 }
 /* Medium */
 @media (max-width:1200px) {
