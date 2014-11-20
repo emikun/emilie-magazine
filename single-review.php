@@ -37,12 +37,18 @@
 		</div>
 	</div>
 	<div class="row page-links">
-		<div class="col-sm-10 col-sm-offset-2">
-			<div class="pull-left">
-				<?php previous_post_link('<div class="pull-right">%link</div><small class="text-uppercase text-right">Prev Review</small>'); ?>
-			</div>
-			<div class="pull-right">
-				<?php next_post_link('%link<small class="text-uppercase">Next Review</small>'); ?>
+		<div class="col-xs-12">
+			<div class="row">
+				<div class="col-xs-6">
+					<div class="pull-left page-left text-right">
+						<?php previous_post_link('<div class="pull-right">%link</div><small class="text-uppercase text-right">Prev Review</small>'); ?>
+					</div>
+				</div>
+				<div class="col-xs-6">
+					<div class="pull-right page-right">
+						<?php next_post_link('%link<small class="text-uppercase">Next Review</small>'); ?>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>

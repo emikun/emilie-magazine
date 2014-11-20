@@ -114,12 +114,10 @@
 <script>
 	$(document).ready(function(){
 		var $ =jQuery.noConflict();
-		$('.col-sm-6 img').matchHeight();
-		$('.col-sm-4 img').matchHeight();
-		$('.home-title').matchHeight();
-
-		$('.weird-backgrond').hover(function(){
-			$(this).css('background-image', 'none');
+		$('.col-sm-6 img .col-sm-4 img .home-title').matchHeight();
+		$('.home-link').hover(function(){
+			$(this).removeClass('gradient-background-1 gradient-background-2 gradient-background-3 gradient-background-4 gradient-background-5', 'slow');
+			$(this).addClass('slow-transition');
 		});
 	});
 </script>

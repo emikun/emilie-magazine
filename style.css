@@ -126,6 +126,9 @@ pullquote {
 	background-image: linear-gradient(to bottom right,#2E2F43,#FB8073);
 	opacity: .55; 
 }
+.slow-transition {
+	transition: 3s;
+}
 /* Typography
 --------------------------------------------------------
 */
@@ -219,7 +222,8 @@ dl dt {
 */
 header {
 	position: relative;
-	margin-bottom: 1em;
+	margin-bottom: 0em;
+
 }
 .navigation-toggle {
 	color: #fff;
@@ -280,11 +284,14 @@ header {
 	color: #fff;
 	padding-right: 10px;
 }
+.page-left, .page-right {
+	background-color: black;
+}
 /* Forms
 --------------------------------------------------------
 */
 input, button {
-	border: 1px solid /*#E3E3DF*/ #FB8073;
+	border: 1px solid #E3E3DF /*#FB8073*/;
 	-webkit-border-radius: 0;
 	-moz-border-radius: 0;
 	-ms-border-radius: 0;

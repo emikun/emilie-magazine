@@ -19,7 +19,10 @@
 	        <span class="sr-only">Toggle navigation</span>
 	        <i class="fa fa-bars"></i>
 	      </button>
-	      <a class="navbar-brand" href="<?php bloginfo('url'); ?>" id="Logo"><img src="<?php echo get_template_directory_uri(); ?>/img/glitch-logo-01.svg" alt=""></a>
+	      <a class="navbar-brand visible-lg" href="<?php bloginfo('url'); ?>" id="Logo"><img src="<?php echo get_template_directory_uri(); ?>/img/glitch-logo-01.svg" alt=""></a>
+	      <a class="navbar-brand visible-md" href="<?php bloginfo('url'); ?>" id="Logo"><img src="<?php echo get_template_directory_uri(); ?>/img/glitch-logo-02.svg" alt=""></a>
+	      <a class="navbar-brand visible-sm" href="<?php bloginfo('url'); ?>" id="Logo"><img src="<?php echo get_template_directory_uri(); ?>/img/glitch-logo-03.svg" alt=""></a>
+	      <a class="navbar-brand visible-xs" href="<?php bloginfo('url'); ?>" id="Logo"><img src="<?php echo get_template_directory_uri(); ?>/img/glitch-logo-04.svg" alt=""></a>
 	    </div>
 
 	    <!-- Collect the nav links, forms, and other content for toggling -->
