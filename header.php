@@ -122,7 +122,7 @@
 	var $ =jQuery.noConflict();
 	$(document).ready(function(){
 		$('.menu-item-62').mouseover(function(){
-			$('#RecentFeatures').removeClass('hidden');
+			// $('#RecentFeatures').removeClass('hidden');
 		});
 	});
 </script>

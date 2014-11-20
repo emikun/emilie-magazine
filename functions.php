@@ -27,17 +27,17 @@ function wpm_theme_styles() {
 	wp_enqueue_style(	'animate_css', get_template_directory_uri() . '/css/animate.min.css');
 	wp_enqueue_style(	'fontawesome_css', 'http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css');
 	wp_enqueue_style(	'main_css', get_template_directory_uri() . '/style.css');
-	wp_enqueue_style(	'fonts_css', 'http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,600,300italic|Righteous');
+	wp_enqueue_style(	'fonts_css', 'http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,600,300italic,700italic);');
 }
 
 add_action( 'wp_enqueue_scripts', 'wpm_theme_styles' );
 
 function wpm_theme_js() {
 	wp_enqueue_script(	'modernizr_js', get_template_directory_uri() . '/js/modernizr.min.js', '','', false);
-	wp_enqueue_script(	'wow_js', get_template_directory_uri() . '/js/wow.min.js', array(	'jquery'	),'', false);
-	wp_enqueue_script(	'bootstrap_js', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js', array(	'jquery'	), '', false);
-	wp_enqueue_script(	'matchheight_js', get_template_directory_uri() . '/js/match-height.min.js', array(	'jquery'	),'', false);
-	wp_enqueue_script(	'matchheight_js', get_template_directory_uri() . '/js/parallax.js', array(	'jquery'	),'', false);
+	wp_enqueue_script(	'wow_js', get_template_directory_uri() . '/js/wow.min.js', array(	'jquery'	),'', true);
+	wp_enqueue_script(	'bootstrap_js', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js', array(	'jquery'	), '', true);
+	wp_enqueue_script(	'matchheight_js', get_template_directory_uri() . '/js/match-height.min.js', array(	'jquery'	),'', true);
+	wp_enqueue_script(	'matchheight_js', get_template_directory_uri() . '/js/parallax.js', array(	'jquery'	),'', true);
 }
 
 add_action( 'wp_enqueue_scripts', 'wpm_theme_js' );
@@ -105,6 +105,11 @@ function my_mce_before_init( $settings ) {
         	'title' =>'Full Image',
         	'selector' => 'img',
         	'classes' => 'img-full'
+        ),
+        array(
+        	'title' => 'Responsive Video',
+        	'block' => 'div',
+        	'classes' => 'responsive-video'
         )
     );
     $settings['style_formats'] = json_encode( $style_formats );

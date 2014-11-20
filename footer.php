@@ -43,13 +43,17 @@
 
 			</div>
 		</div>
-		<small>&copy; <?php echo date('Y'); echo ' '; echo bloginfo('name'); ?></small>
-		<small class="disclaimer">Hi, this is a school project by <a href="emilie.io" target="_blank">Emilie Thaler</a>. I've tried my best to attribute all content to the respective owner and original source, but if there is something here of yours and you'd rather it not be there, please let me know by emailing me at <a href="mailto:emiliethaler@gmail.com">emiliethaler@gmail.com</a> and I will promptly remove it!</small>
+		<div class="row">
+			<div class="col-xs-12">
+				<small>&copy; <?php echo date('Y'); echo ' '; echo bloginfo('name'); ?></small>
+				<small class="disclaimer">Hi, this is a school project by <a href="emilie.io" target="_blank">Emilie Thaler</a>. I've tried my best to attribute all content to the respective owner and original source, but if there is something here of yours and you'd rather it not be there, please let me know by emailing me at <a href="mailto:emiliethaler@gmail.com">emiliethaler@gmail.com</a> and I will promptly remove it!</small>
+			</div>
+		</div>
 	</div>
 </footer>
 <script>
 	var $ =jQuery.noConflict();
-	$(function(){$("a[href*=#]:not([href=#])").click(function(){if(location.pathname.replace(/^\//,"")==this.pathname.replace(/^\//,"")&&location.hostname==this.hostname){var e=$(this.hash);e=e.length?e:$("[name="+this.hash.slice(1)+"]");if(e.length){$("html,body").animate({scrollTop:e.offset().top},1e3);return false}}})})
+	//$(function(){$("a[href*=#]:not([href=#])").click(function(){if(location.pathname.replace(/^\//,"")==this.pathname.replace(/^\//,"")&&location.hostname==this.hostname){var e=$(this.hash);e=e.length?e:$("[name="+this.hash.slice(1)+"]");if(e.length){$("html,body").animate({scrollTop:e.offset().top},1e3);return false}}})})
 </script>
 
 <?php wp_footer(); ?>

@@ -12,8 +12,9 @@
 		<div class="col-sm-3 review-sidebar">
 			 <div class="review-details">
 			 	<h5 class="review-sidebar-title"><!-- Review Details --></h5>
-				<p class="review-rating"><?php the_field('review_rating') ?></p>
 				<dl>
+					<dd class="review-rating" value="<?php the_field('review_rating') ?>"><?php the_field('review_rating') ?></dd>
+					<dt><small>Glitch Score</small></dt>
 					<dd><?php the_field('review_release_date'); ?></dd>
 					<dt><small>Release Date</small></dt>
 					<dd><?php the_field('review_platform'); ?></dd>
@@ -27,13 +28,10 @@
 			<div class="review-game-cover">
 				<h5 class="review-sidebar-title"><i class="fa fa-shopping-cart"></i> Purchase</h5>
 				<img class="image-cover" src="<?php the_field('review_game_cover');?>" alt="<?php the_title(); ?> Cover">
-				<br>
-				<a href=""><img src="<?php echo get_template_directory_uri(); ?>/img/amazon.svg" alt="" height="16px"> Purchase through Amazon</a><br>
-				<a href=""><img src="<?php echo get_template_directory_uri(); ?>/img/steam.svg" alt="" height="16px"> Purchase through Steam</a>
 			</div>
 		</div>
 		<div class="col-sm-9 review-content">
-			<h1><?php the_title(); ?></h1>
+			<h1><a href="<?php bloginfo('url'); ?>/review" class="heading-copy">Review:</a> <?php the_title(); ?></h1>
 			<small>Posted by <a href="<?php the_field('review_source'); ?>"><?php the_field('review_author'); ?></a> on <?php the_date(); ?></small>
 			<?php the_content(); ?>
 		</div>
@@ -50,4 +48,10 @@
 	</div>
 </div>
 <?php endwhile; endif;  ?>
+<script>
+	$(document).ready(function(){
+		$('dd[value|="8"], dd[value|="8.5"], dd[value|="9"], dd[value|="9.5"], dd[value|="10"]').css('background-color','#8EC94B');
+		$('dd[value|="1"], dd[value|="1.5"], p[value|="2"], dd[value|="2.5"], dd[value|="3"], dd[value|="3.5"], dd[value|="4"], dd[value|="4.5"]').css('background-color','red');
+	})
+</script>
 <?php get_footer(); ?>
