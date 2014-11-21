@@ -7,13 +7,13 @@
 <?php get_header(); ?>
 <div class="container-fluid">
 <div class="row">
-	<div class="col-sm-8 home-div">
+	<div class="col-sm-8 home-div wow fadeIn" data-wow-delay="5s" data-wow-duration="1s">
 		<small class="home-labels">Featured</small>
 		<?php $args = array('posts_per_page' => 1, 'post_type' => 'feature',); ?>
 		<?php $query = new WP_Query(	$args	);?>
 		<?php if ($query->have_posts()	) : while ($query->have_posts()	) : $query->the_post(); ?>
 				<a href="<?php the_permalink(); ?>" class="home-link weird-background gradient-background-1" style="height: 300px; background-image: url(<?php $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); echo $url; ?>);">
-					<h4 class="home-title" style="font-size: 2em;"><?php the_title(); ?> – <?php the_field('feature_tagline'); ?></h4>
+					<h4 class="home-title" style="font-size: 2em;"><?php the_title(); ?> – <?php the_field('feature_tagline'); ?><small class="home-credit">Posted by <?php the_field('feature_author'); ?> on <?php the_date(); ?></small></h4>
 				</a>
 		<?php endwhile; endif; wp_reset_postdata(); ?>
 	</div>
@@ -23,7 +23,7 @@
 		<?php $query = new WP_Query(	$args	);?>
 			<?php if ($query->have_posts()	) : while ($query->have_posts()	) : $query->the_post(); ?>
 			<div class="col-sm-12 emerging-well">
-				<a href="<?php the_permalink(); ?>"><h4><?php the_title(); ?></h4></a>	
+				<a href="<?php the_permalink(); ?>"><h4><?php the_title(); ?></h4><small class="home-credit">Posted by <?php the_field('column_author'); ?> on <?php the_date(); ?></small></a>	
 				<small class="emerging-comments"><i class="fa fa-comment"></i> Comment</small>	
 			</div>
 		<?php endwhile; endif; wp_reset_postdata(); ?>
@@ -36,7 +36,7 @@
 		<?php $query = new WP_Query(	$args	); ?>
 		<?php if ($query->have_posts()	) : while ($query->have_posts()	) : $query->the_post(); ?>
 			<a href="<?php the_permalink(); ?>" class="home-link weird-background gradient-background-1" style="height: 200px; background-image: url(<?php $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); echo $url; ?>);">
-			<h4 class="home-title"><?php the_title(); ?></h4>
+			<h4 class="home-title"><?php the_title(); ?><small class="home-credit">Posted by <?php the_field('column_author'); ?> on <?php the_date(); ?></small></h4>
 			</a>
 		<?php endwhile; endif; wp_reset_postdata(); ?>
 	</div>
@@ -46,7 +46,7 @@
 		<?php $query = new WP_Query(	$args	); ?>
 		<?php if ($query->have_posts()	) : while ($query->have_posts()	) : $query->the_post(); ?>
 			<a href="<?php the_permalink(); ?>" class="home-link weird-background gradient-background-2" style="height: 200px; background-image: url(<?php $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); echo $url; ?>);">
-				<h4 class="home-title"><?php the_title(); ?></h4>
+			<h4 class="home-title"><?php the_title(); ?><small class="home-credit">Posted by <?php the_field('column_author'); ?> on <?php the_date(); ?></small></h4>
 			</a>
 		<?php endwhile; endif; wp_reset_postdata(); ?>
 	</div>
@@ -56,7 +56,7 @@
 		<?php $query = new WP_Query(	$args	); ?>
 		<?php if ($query->have_posts()	) : while ($query->have_posts()	) : $query->the_post(); ?>
 			<a href="<?php the_permalink(); ?>" class="home-link weird-background gradient-background-3" style="height: 200px; background-image: url(<?php $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); echo $url; ?>);">
-				<h4 class="home-title"><?php the_title(); ?></h4>
+			<h4 class="home-title"><?php the_title(); ?><small class="home-credit">Posted by <?php the_field('column_author'); ?> on <?php the_date(); ?></small></h4>
 			</a>
 		<?php endwhile; endif; wp_reset_postdata(); ?>
 	</div>
@@ -70,7 +70,7 @@
 	<?php if ($query->have_posts()	) : while ($query->have_posts()	) : $query->the_post(); ?>
 	<div class="col-sm-6 home-div">
 			<a href="<?php the_permalink(); ?>" class="home-link weird-background gradient-background-5" style="height: 300px; background-image: url(<?php $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); echo $url; ?>);">
-			<h4 class="home-title"><?php the_title(); ?></h4>
+			<h4 class="home-title"><?php the_title(); ?><small class="home-credit">Posted by <?php the_field('review_author'); ?> on <?php the_date(); ?></small></h4>
 		</a>
 	</div>	
 	<?php endwhile; endif; wp_reset_postdata(); ?>
@@ -83,7 +83,7 @@
 		<?php $query = new WP_Query(	$args	); ?>
 		<?php if ($query->have_posts()	) : while ($query->have_posts()	) : $query->the_post(); ?>
 			<a href="<?php the_permalink(); ?>" class="home-link weird-background gradient-background-2" style="height: 200px; background-image: url(<?php $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); echo $url; ?>);">
-				<h4 class="home-title"><?php the_title(); ?></h4>
+			<h4 class="home-title"><?php the_title(); ?><small class="home-credit">Posted by <?php the_field('column_author'); ?> on <?php the_date(); ?></small></h4>
 			</a>
 		<?php endwhile; endif; wp_reset_postdata(); ?>
 	</div>
@@ -94,7 +94,7 @@
 		<?php $query = new WP_Query(	$args	); ?>
 		<?php if ($query->have_posts()	) : while ($query->have_posts()	) : $query->the_post(); ?>
 			<a href="<?php the_permalink(); ?>" class="home-link weird-background gradient-background-3" style="height: 200px; background-image: url(<?php $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); echo $url; ?>);">
-				<h4 class="home-title"><?php the_title(); ?></h4>
+			<h4 class="home-title"><?php the_title(); ?><small class="home-credit">Posted by <?php the_field('column_author'); ?> on <?php the_date(); ?></small></h4>
 			</a>
 		<?php endwhile; endif; wp_reset_postdata(); ?>
 	</div>
@@ -105,7 +105,7 @@
 		<?php $query = new WP_Query(	$args	); ?>
 		<?php if ($query->have_posts()	) : while ($query->have_posts()	) : $query->the_post(); ?>
 			<a href="<?php the_permalink(); ?>" class="home-link weird-background gradient-background-4" style="height: 200px; background-image: url(<?php $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); echo $url; ?>);">
-				<h4 class="home-title"><?php the_title(); ?></h4>
+			<h4 class="home-title"><?php the_title(); ?><small class="home-credit">Posted by <?php the_field('column_author'); ?> on <?php the_date(); ?></small></h4>
 			</a>
 		<?php endwhile; endif; wp_reset_postdata(); ?>
 	</div>
