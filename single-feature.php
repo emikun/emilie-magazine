@@ -7,19 +7,13 @@
 <?php get_header('feature'); ?>
 <div class="single-container">
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-<div class="feature-hero">
+<div class="feature-hero" style="background-image: url(<?php the_field('parallax_layer_1'); ?>);background-size:cover;">
 	<div class="container-fluid longform feature-page">
 			<div  id="Intro" class="col-sm-12 feature-lead">
 				<h1><?php the_title(); ?></h1>
 				<p class="lead"><?php the_field('feature_tagline'); ?></p>
 				<small>Posted by <a href="<?php the_field('feature_source'); ?>"><?php the_field('feature_author'); ?></a> on <?php the_date(); ?></small>
 				<a href="#Part1" class="read-more">Read On</a>
-				<ul id="scene">
-				  <li class="layer" data-depth="0.00"><img src="<?php the_field('parallax_layer_1'); ?>"></li>
-				  <li class="layer" data-depth="0.20"><img src="<?php the_field('parallax_layer_2'); ?>"></li>
-				  <li class="layer" data-depth="0.40"><img src="<?php the_field('parallax_layer_3'); ?>"></li>
-				  <li class="layer" data-depth="0.60"><img src="<?php the_field('parallax_layer_4'); ?>"></li>
-				</ul>
 			</div>
 	</div>
 </div><!-- end feature-hero-->
@@ -27,7 +21,7 @@
 <div id="Part2" class="feature-section feature-part-2 longform"><div class="container-fluid"><?php the_field('part_2'); ?><a href="#Part3" class="block-link-center"><i class="fa fa-chevron-circle-down"></i></a></div></div>
 <div id="Part3" class="feature-section feature-part-3 longform"><div class="container-fluid feature-interview"><?php the_field('part_3'); ?><a href="#Part4" class="block-link-center"><i class="fa fa-chevron-circle-down"></i></a></div></div>
 <div id="Part4" class="feature-section feature-part-4 longform"><div class="container-fluid"><?php the_field('part_4'); ?><a href="#Part5" class="block-link-center"><i class="fa fa-chevron-circle-down"></i></a></div></div>
-<div id="Part5" class="feature-section feature-part-5 longform"><div class="container-fluid"><?php the_field('part_5'); ?><a href="#Intro" class="block-link-center"><i class="fa fa-chevron-circle-up"></i></a></div></div>
+<div id="Part5" class="feature-section feature-part-5 longform"><div class="container-fluid"><?php the_field('part_5'); ?><a href="#Nav" class="block-link-center"><i class="fa fa-chevron-circle-up"></i></a></div></div>
 
 <?php endwhile; endif;  ?>
 <nav class="nav nav-pills nav-stacked inner-page-nav" data-spy="affix">
@@ -40,10 +34,9 @@
 	</ul>
 </nav>
 <script>
-	var $ =jQuery.noConflict();
-	$('body').scrollspy({ target: '.inner-page-nav' });
-	var scene = document.getElementById('scene');
-	var parallax = new Parallax(scene);
+	$(document).ready(function(){
+		$('body').scrollspy({ target: '.inner-page-nav' });
+	})
 </script>
 </div>
 <?php get_footer(); ?>

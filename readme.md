@@ -16,8 +16,8 @@ Pages are permanent, fixed parts of the site. Posts are temporal, or articles (i
 - [x] **Week 2** *(October 28)* – Creation of logo & identity, page layouts (wireframes), header & footer coded
 - [x] **Week 3** *(November 4)* – Navigation finalized, template coding begins
 - [x] **Week 4** *(November 11)* – Coding of template and styleguide
-- [ ] **Week 5** *(November 18)* – User and browser testing; refinements
-- [ ] **Week 6** *(November 25)* – Project deadline & presentations
+- [x] **Week 5** *(November 18)* – User and browser testing; refinements
+- [x] **Week 6** *(November 25)* – Project deadline & presentations
 
 ## To-Do List
 
@@ -38,18 +38,18 @@ Pages are permanent, fixed parts of the site. Posts are temporal, or articles (i
 ### Content
 - [x] Generate possible tags for blog posts
 - [x] Generate possible taxonomies for reviews
-- [ ] Add one new article per day (until 11/25)
+- [x] Add one new article per day (until 11/25)
 
 ### Development
 - [x] Code header
 - [x] Code footer
-- [ ] Code template for Features page ("page-features.php")
-- [ ] Code template for single Feature page ("single-feature.php")
+- [x] Code template for Features page ("page-features.php")
+- [x] Code template for single Feature page ("single-feature.php")
 - [x] Code template for Reviews page ("page-reviews.php")
-- [ ] Code template for single Review page ("single-review.php")
-- [ ] Code template for Columns page ("single.php")
-- [ ] Code template for 404 page ("404.php")
-- [ ] Code template for page ("page.php")
-- [ ] Code template for Home page ("home.php")
+- [x] Code template for single Review page ("single-review.php")
+- [x] Code template for Columns page ("single.php")
+- [x] Code template for 404 page ("404.php")
+- [x] Code template for page ("page.php")
+- [x] Code template for Home page ("home.php")
 
 

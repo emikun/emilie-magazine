@@ -4,8 +4,14 @@ add_theme_support(	'menus'	);
 add_theme_support(	'post-thumbnails'	);
 
 function wpt_excerpt_length( $length ) {
-	return 40;
+	return 30;
 }
+
+function new_excerpt_more( $more ) {
+	return '...';
+}
+
+add_filter('excerpt_more', 'new_excerpt_more');
 add_filter(	'excerpt_length', 'wpt_excerpt_length', 999	);
 
 function register_theme_menus() {

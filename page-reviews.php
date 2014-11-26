@@ -13,9 +13,9 @@
 	$query = new WP_Query(	$args	);
 ?>
 
-<div class="container-fluid">
+<div class="container-fluid pagetop-margin">
 	<div class="row">
-		<div class="col-sm-2 filter-reviews">
+		<!-- <div class="col-sm-2 filter-reviews">
 			<h5 class="text-uppercase">Filter Reviews</h5>
 			<ul class="fa-ul">
 				<li><span class="filter-reviews-parameter"><i class="fa-li fa fa-plus"></i> Platforms </span>
@@ -34,8 +34,8 @@
 				</li>
 
 			</ul>
-		</div>
-		<div class="col-sm-10">
+		</div> -->
+		<div class="col-sm-12">
 			<div class="row">
 				<?php if (	$query->have_posts()	) : while (	$query->have_posts()	) : $query->the_post(); ?>
 				<div class="col-sm-4 col-xs-6 review-snippet">

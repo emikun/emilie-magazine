@@ -1,9 +1,13 @@
 <?php get_header(); ?>
 <div class="container-fluid">
 	<div class="row">
-		<div class="col-sm-2">
-			<div class="col-sm-2 info-left"><strong>Category: </strong><?php the_category(', '); ?></div>
-			<div class="col-sm-10"><strong>Tags: </strong><span class="text-capitalize"><?php the_tags('<span class="tag">',' ','</span>'); ?></span></div>	
+		<div class="col-sm-2" style="margin-top: 1em;">
+			<strong class="sidebar-label"><small>Category</small></strong>
+			<span class="label label-default"><?php the_category(', '); ?></span>
+			<strong class="sidebar-label"><small>Tags</small> </strong>
+			<span class="text-capitalize">
+				<?php the_tags('<span class="label label-default">','</span> <span class="label label-default">','</span>'); ?>
+			</span>
 		</div>
 		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 			<div class="col-sm-10 longform">

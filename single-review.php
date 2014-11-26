@@ -10,45 +10,42 @@
 <div class="container-fluid longform">
 	<div class="row review-page">
 		<div class="col-sm-3 review-sidebar">
-			 <div class="review-details">
-			 	<h5 class="review-sidebar-title"><!-- Review Details --></h5>
-				<dl>
-					<dd class="review-rating" value="<?php the_field('review_rating') ?>"><?php the_field('review_rating') ?></dd>
-					<dt><small>Glitch Score</small></dt>
-					<dd><?php the_field('review_release_date'); ?></dd>
-					<dt><small>Release Date</small></dt>
-					<dd><?php the_field('review_platform'); ?></dd>
-					<dt><small>Platform</small></dt>
-					<dd><?php the_field('review_developer_name'); ?></dd>
-					<dt><small>Developer</small></dt>
-					<dd><?php the_field('review_publisher_name'); ?></dd>
-					<dt><small>Publisher</small></dt>
-				</dl>
+			 <div class="review-details row">
+			 	<div class="col-xs-6 col-md-12">
+					<dl>
+						<dd class="review-rating" value="<?php the_field('review_rating') ?>"><?php the_field('review_rating') ?></dd>
+						<dt><small>Glitch Score</small></dt>
+						<dd><?php the_field('review_release_date'); ?></dd>
+						<dt><small>Release Date</small></dt>
+						<dd><?php the_field('review_platform'); ?></dd>
+						<dt><small>Platform</small></dt>
+						<dd><?php the_field('review_developer_name'); ?></dd>
+						<dt><small>Developer</small></dt>
+						<dd><?php the_field('review_publisher_name'); ?></dd>
+						<dt><small>Publisher</small></dt>
+					</dl>
+				</div>
 			</div>
-			<div class="review-game-cover">
+			<div class="review-game-cover col-sm-6 col-md-12">
 				<h5 class="review-sidebar-title"><i class="fa fa-shopping-cart"></i> Purchase</h5>
 				<img class="image-cover" src="<?php the_field('review_game_cover');?>" alt="<?php the_title(); ?> Cover">
 			</div>
 		</div>
 		<div class="col-sm-9 review-content">
-			<h1><a href="<?php bloginfo('url'); ?>/review" class="heading-copy">Review:</a> <?php the_title(); ?></h1>
+			<p style="font-size:.6em;"><span class="label label-default text-uppercase">Review</span></p>
+			<h1 style="margin-top: -.3em;"><?php the_title(); ?></h1>
 			<small>Posted by <a href="<?php the_field('review_source'); ?>"><?php the_field('review_author'); ?></a> on <?php the_date(); ?></small>
 			<?php the_content(); ?>
 		</div>
 	</div>
-	<div class="row page-links">
-		<div class="col-xs-12">
-			<div class="row">
-				<div class="col-xs-6">
-					<div class="pull-left page-left text-right">
-						<?php previous_post_link('<div class="pull-right">%link</div><small class="text-uppercase text-right">Prev Review</small>'); ?>
-					</div>
-				</div>
-				<div class="col-xs-6">
-					<div class="pull-right page-right">
-						<?php next_post_link('%link<small class="text-uppercase">Next Review</small>'); ?>
-					</div>
-				</div>
+	<div class="page-links">
+		<div class="row">
+			<div class="col-xs-6">
+				<?php previous_post_link('<div class="page-left page-control"><div class="vh-center"><div class="text-right">%link</div><small class="text-uppercase text-right">Previous Review</small></div>
+				</div>'); ?>
+			</div>
+			<div class="col-xs-6">
+				<?php next_post_link('<div class="page-right page-control"><div class="vh-center">%link<small class="text-uppercase">Next Review</small></div></div>'); ?>
 			</div>
 		</div>
 	</div>
