@@ -6,7 +6,7 @@
 
 <?php get_header(); ?>
 <div class="container-fluid pagetop-margin">
-<p>test page</p>
+<p>test page boop</p>
 	<div class="row">
 		<div class="col-sm-2"></div>
 		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>

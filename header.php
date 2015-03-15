@@ -33,18 +33,15 @@
 	  <div class="container-fluid hover-menu">
 	    <!-- Brand and toggle get grouped for better mobile display -->
 	    <div class="navbar-header">
-	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#NavbarCollapse">
 	        <span class="sr-only">Toggle navigation</span>
 	        <i class="fa fa-bars"></i>
 	      </button>
-	      <a class="navbar-brand visible-lg" href="<?php bloginfo('url'); ?>" id="Logo"><img src="<?php echo get_template_directory_uri(); ?>/img/glitch-logo-01.svg" alt=""></a>
-	      <a class="navbar-brand visible-md" href="<?php bloginfo('url'); ?>" id="Logo"><img src="<?php echo get_template_directory_uri(); ?>/img/glitch-logo-02.svg" alt=""></a>
-	      <a class="navbar-brand visible-sm" href="<?php bloginfo('url'); ?>" id="Logo"><img src="<?php echo get_template_directory_uri(); ?>/img/glitch-logo-03.svg" alt=""></a>
-	      <a class="navbar-brand visible-xs" href="<?php bloginfo('url'); ?>" id="Logo"><img src="<?php echo get_template_directory_uri(); ?>/img/glitch-logo-04.svg" alt=""></a>
+	      <a class="navbar-brand" href="<?php bloginfo('url'); ?>" id="Logo"><img src="<?php echo get_template_directory_uri(); ?>/img/glitch-logo-01.svg" alt=""></a>
 	    </div>
 
 	    <!-- Collect the nav links, forms, and other content for toggling -->
-	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	    <div class="collapse navbar-collapse" id="NavbarCollapse">
 	    	<?php 
 				$defaults = array(
 					'container' => false,
